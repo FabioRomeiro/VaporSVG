@@ -1,0 +1,8 @@
+:root {
+  --grid-size: 38vh;
+}
+
+body {
+  background-color: #09013B;
+  background-size: cover;
+} 

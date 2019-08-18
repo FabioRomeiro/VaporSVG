@@ -1,0 +1,13 @@
+.vapor {
+  
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  
+  overflow: hidden;
+  
+  width: 100%;
+  height: 100vh;
+  
+  filter: blur(50%);
+}

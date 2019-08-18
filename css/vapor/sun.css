@@ -1,0 +1,17 @@
+.vapor__sun {
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  top: 0;
+  
+  height: calc(100vh - var(--grid-size));
+  width: 100%;
+}
+
+.vapor__sun .sun {
+  width:215px;
+  height:215px;
+}
