@@ -10,7 +10,7 @@
 <body>
   <div class="vapor">
     <div class="vapor__sun">
-      <svg class="sun" viewBox="0 0 316 316" >
+      <svg class="sun" viewBox="0 0 316 316" preserveAspectRatio="xMidYMid meet">
         <mask id="tape-mask">
           <rect fill="white" width="100%" height="100%" />
           
@@ -24,23 +24,28 @@
           <rect x="0" y="255" width="100%" height="8" fill="black"></rect>
           <rect x="0" y="285" width="100%" height="9" fill="black"></rect>
         </mask>
-        <circle mask="url(#tape-mask)" cx="158" cy="158" r="158" fill="white" width="316" height="316" />
+        <linearGradient id="vapor-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" style="stop-color:#F77166;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#FB0EFA;stop-opacity:1" />
+        </linearGradient>
+        <circle id="shape" mask="url(#tape-mask)" cx="158" cy="158" r="158" fill="url(#vapor-gradient)" width="316" height="316" />
       </svg>
     </div>
     <div class="vapor__grid">
       <svg viewBox="0 0 1366 331" preserveAspectRatio="xMidYMin slice" class="grid-lines">
         <rect x="-0.5" class="base-line" />
         <g class="lines-horizontal">
-          <rect class="line" x="-0.5" y="26" height="2" fill="#9B3281" />
-          <rect class="line" x="-0.5" y="45" height="1" fill="#983780" />
-          <rect class="line" x="-0.5" y="65" height="2" fill="#913279" />
-          <rect class="line" x="-0.5" y="88" height="2" fill="#912476" />
-          <rect class="line" x="-0.5" y="114" height="1" fill="#9B2C80" />
-          <rect class="line" x="-0.5" y="143" height="2" fill="#CB6DB4" />
-          <rect class="line" x="-0.5" y="178" height="1" fill="#FFD7EF" />
-          <rect class="line" x="-0.5" y="217" height="2" fill="#FFDEF1" />
-          <rect class="line" x="-0.5" y="264" height="2" fill="#FFDEF1" />
-          <rect class="line" x="-0.5" y="320" height="2" fill="#FFDEF1" />
+          <rect class="line line-0" x="-0.5" y="2" height="2" />
+          <rect class="line line-1" x="-0.5" y="26" height="2" />
+          <rect class="line line-2" x="-0.5" y="45" height="1" />
+          <rect class="line line-3" x="-0.5" y="65" height="2" />
+          <rect class="line line-4" x="-0.5" y="88" height="2" />
+          <rect class="line line-5" x="-0.5" y="114" height="1" />
+          <rect class="line line-6" x="-0.5" y="143" height="2" />
+          <rect class="line line-7" x="-0.5" y="178" height="1" />
+          <rect class="line line-8" x="-0.5" y="217" height="2" />
+          <rect class="line line-9" x="-0.5" y="264" height="2" />
+          <rect class="line line-10" x="-0.5" y="320" height="2" />
         </g>
         <g class="lines-vertical">
           <path class="line" d="M-1.5 14.5L20.5 3.5L17.5 4L-2 13L-1.5 14.5Z" />

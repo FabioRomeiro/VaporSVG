@@ -3,6 +3,7 @@ let svgSprite = require('gulp-svg-sprite');
 let minifyCSS = require('gulp-minify-css');
 let autoprefixer = require('gulp-autoprefixer');
 let concat = require('gulp-concat');
+let browserSync = require('browser-sync');
 
 gulp.task('sprite', () => 
   gulp.src('assets/icons/**/*.svg')
@@ -35,4 +36,19 @@ gulp.task('css', () =>
     .pipe(gulp.dest('css'))
 );
 
-gulp.task('default', gulp.series('sprite', 'css'));
+gulp.task('build', ['sprite', 'css']);
+
+gulp.task('default', ['build']);
+
+gulp.task('dev', ['build'], () => {
+  browserSync.init({
+    server: {
+      baseDir: './'
+    }
+  });
+
+  gulp.watch(['css/**/*.css', '!src/css/style.min.css'], ['css']);
+  gulp.watch('assets/icons/**/*.svg', ['sprite']);
+
+  gulp.watch(['index.html', 'assets/**/*', 'css/**/*']).on('change', browserSync.reload);
+});

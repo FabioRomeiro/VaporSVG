@@ -15,9 +15,9 @@ Access the landing page [clicking on this link](http://fabioromeiro.com.br)
 
 ### Running the website locally
 
-This is a basic static website, but before you run *index.html* in your browser, you have to go through 2 steps:
+This is a basic static website, but to make the development process faster and easier I choose to use a task runner (Gulp); If you want to run the webpage locally, go through this 2 steps:
 
-1. In the terminal, run ```npm install```
-2. Now, load the icons, CSS and other otimizations running ```npm run gulp```. (**TODO:** Gulp 'watch' task with *browserSync*)
+1. In the terminal, run ```npm install``` to install the dependences (make sure you're in the right directory)
+2. Execute the application with ```npm run dev```
 
-Once you have done so, just execute the *index.html* file in your browser
+Once you have done so, your browser should open and load the website automatically, but if it don't, run this address: *http://localhost:3000*

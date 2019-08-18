@@ -1,3 +1,12 @@
+:root {
+  --grid-space: 18px;
+  --grid-time: 1s;
+  --grid-color-from: #9B3281;
+  --grid-color-to: #983780;
+  --grid-height-from: 2px;
+  --grid-height-to: 2px;
+}
+
 .vapor__grid {
   width: 100%;
   height: var(--grid-size);
@@ -22,4 +31,112 @@
 
 .vapor__grid .grid-lines .lines-horizontal .line{
   width: 100%;
+  animation: fall-1 var(--grid-time) linear infinite;
+}
+
+@keyframes fall-1 {
+  from {
+    transform: translateY(0);
+    fill: var(--grid-color-from);
+    height: var(--grid-height-from);
+  }
+  to {
+    transform: translateY(var(--grid-space));
+    fill: var(--grid-color-to);
+    height: var(--grid-height-to);
+  }
+}
+
+@keyframes fall-2 {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+    fill: var(--grid-color-from);
+    height: var(--grid-height-from);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(var(--grid-space));
+    fill: var(--grid-color-to);
+    height: var(--grid-height-to);
+  }
+}
+
+.vapor__grid .grid-lines .lines-horizontal .line-0 {
+  --grid-space: 24px;
+  --grid-color-from: #9B3281;
+  --grid-color-to: #983780;
+  --grid-height-from: 2px;
+  --grid-height-to: 2px;
+  animation: fall-2 var(--grid-time) linear infinite;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-1 {
+  --grid-space: 18px;
+  --grid-color-from: #9B3281;
+  --grid-color-to: #983780;
+  --grid-height-from: 2px;
+  --grid-height-to: 1px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-2 {
+  --grid-space: 21px;
+  --grid-color-from: #983780;
+  --grid-color-to: #913279;
+  --grid-height-from: 1px;
+  --grid-height-to: 2px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-3 {
+  --grid-space: 23px;
+  --grid-color-from: #913279;
+  --grid-color-to: #912476;
+  --grid-height-from: 2px;
+  --grid-height-to: 2px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-4 {
+  --grid-space: 25px;
+  --grid-color-from: #912476;
+  --grid-color-to: #9B2C80;
+  --grid-height-from: 2px;
+  --grid-height-to: 1px;
+} 
+.vapor__grid .grid-lines .lines-horizontal .line-5 {
+  --grid-space: 29px;
+  --grid-color-from: #9B2C80;
+  --grid-color-to: #CB6DB4;
+  --grid-height-from: 1px;
+  --grid-height-to: 2px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-6 {
+  --grid-space: 34px;
+  --grid-color-from: #CB6DB4;
+  --grid-color-to: #FFD7EF;
+  --grid-height-from: 2px;
+  --grid-height-to: 1px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-7 {
+  --grid-space: 39px;
+  --grid-color-from: #FFD7EF;
+  --grid-color-to: #FFDEF1;
+  --grid-height-from: 1px;
+  --grid-height-to: 2px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-8 {
+  --grid-space: 47px;
+  --grid-color-from: #FFDEF1;
+  --grid-color-to: #FFDEF1;
+  --grid-height-from: 2px;
+  --grid-height-to: 2px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-9 {
+  --grid-space: 56px;
+  --grid-color-from: #FFDEF1;
+  --grid-color-to: #FFDEF1;
+  --grid-height-from: 2px;
+  --grid-height-to: 2px;
+}
+.vapor__grid .grid-lines .lines-horizontal .line-10 {
+  --grid-space: 47px;
+  --grid-color-from: #FFDEF1;
+  --grid-color-to: #FFDEF1;
+  --grid-height-from: 2px;
+  --grid-height-to: 2px;
 }
