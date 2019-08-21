@@ -15,3 +15,61 @@
   width:215px;
   height:215px;
 }
+
+.vapor__sun .sunmask {
+  --to-color: black;
+
+  x: 0;
+  width: 100%;
+  animation: fall 7s linear infinite; 
+}
+
+.sunmask.sunmask--0 {
+  --to-y: 33;
+}
+.sunmask.sunmask--1 {
+  --to-y: 70;
+}
+.sunmask.sunmask--2 {
+  --to-y: 105;
+}
+.sunmask.sunmask--3 {
+  --to-y: 135;
+}
+.sunmask.sunmask--4 {
+  --to-y: 165;
+}
+.sunmask.sunmask--5 {
+  --to-y: 194;
+}
+.sunmask.sunmask--6 {
+  --to-y: 221;
+}
+.sunmask.sunmask--7 {
+  --to-y: 255;
+}
+.sunmask.sunmask--8 {
+  --to-y: 285;
+}
+.sunmask.sunmask--9 {
+  --to-y: 315;
+}
+
+.sunmask.sunmask--0,
+.sunmask.sunmask--1 {
+  --to-height: 10px;
+}
+
+.sunmask.sunmask--2,
+.sunmask.sunmask--3,
+.sunmask.sunmask--4,
+.sunmask.sunmask--6,
+.sunmask.sunmask--8,
+.sunmask.sunmask--9 {
+  --to-height: 9px;
+}
+
+.sunmask.sunmask--5,
+.sunmask.sunmask--7 {
+  --to-height: 8px;
+}

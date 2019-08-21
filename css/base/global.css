@@ -6,3 +6,11 @@ body {
   background-color: #09013B;
   background-size: cover;
 } 
+
+@keyframes fall {
+  to {
+    y: var(--to-y);
+    fill: var(--to-color);
+    height: var(--to-height);
+  }
+}
