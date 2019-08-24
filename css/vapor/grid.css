@@ -7,13 +7,36 @@
 }
 
 .vapor__grid {
+
+  position: relative;
+  
   width: 100%;
   height: var(--grid-size);
 }
 
+.grid-degrade-top {
+  position: absolute;
+  bottom: var(--grid-size);
+  height: 100%;
+  width: 100%;
+}
+
+.grid-degrade-top .shape {
+  height: 100%;
+  width: 120vw;
+}
+
+.grid-degrade-bottom {
+  height: 50%;
+  width: 100%;
+}
+
 .vapor__grid .grid-lines {
+  
   width: 100%;
   height: 100%;
+
+  filter: blur(1px);
 }
 
 .vapor__grid .grid-lines .base-line {

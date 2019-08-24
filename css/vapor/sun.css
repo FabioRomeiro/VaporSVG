@@ -9,11 +9,32 @@
   
   height: calc(100vh - var(--grid-size));
   width: 100%;
+
+  filter: url("#wave-filter");
+}
+
+.sun-degrade-center {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 280px);
+}
+
+.sun-degrade-center .origin-top {
+  stop-color:#FB0F9C;
+  stop-opacity:.19;
+}
+
+.sun-degrade-center .shape {
+  width: 400px;
+  height: 400px;
 }
 
 .vapor__sun .sun {
-  width:215px;
-  height:215px;
+  
+  width:316px;
+  height:316px;
+
+  filter: drop-shadow(0 0 21px #FB0F9C);
 }
 
 .vapor__sun .sunmask {
