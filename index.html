@@ -9,6 +9,9 @@
   </head>
   <body>
     <div class="vapor">
+      <div class="vapor__ui">
+        
+      </div>
       <div class="vapor__sun">
         <svg class="sun-degrade-center" viewBox="0 0 800 800">
           <radialGradient id="sun-gradient-center" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -19,8 +22,8 @@
         </svg>
         <svg class="sun" viewBox="0 0 316 316" preserveAspectRatio="xMidYMid meet">
           <defs>
-            <filter id="wave-filter">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="1" />
+            <filter id="sun-blur">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
             </filter>
           </defs>
           <mask id="tape-mask">
@@ -41,7 +44,7 @@
             <stop offset="0%" style="stop-color:#F77166;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#FB0EFA;stop-opacity:1" />
           </linearGradient>
-          <circle id="shape" mask="url(#tape-mask)" cx="158" cy="158" r="158" fill="url(#vapor-gradient)" width="316" height="316" />
+          <circle id="shape" filter="url(#sun-blur)" mask="url(#tape-mask)" cx="158" cy="158" r="158" fill="url(#vapor-gradient)" width="316" height="316" />
         </svg>
       </div>
       <div class="vapor__grid">
@@ -53,10 +56,16 @@
           <rect x="0" y="0" class="shape" fill="url(#grid-gradient-top)" />
         </svg>
         <svg viewBox="0 0 1366 331" preserveAspectRatio="xMidYMin slice" class="grid-lines">
+          
+          <filter id="wave-filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+          </filter>
+        
           <linearGradient id="grid-gradient-bottom" x1="0%" y1="0%" x2="0%" y2="100%">
             <stop offset="0%" style="stop-color:#FB0F9C;stop-opacity:.7" />
             <stop offset="100%" style="stop-color:#FB0F9C;stop-opacity:0" />
           </linearGradient>
+        
           <rect x="0" y="0" class="grid-degrade-bottom" fill="url(#grid-gradient-bottom)" />
           <rect x="-0.5" class="base-line" />
           <g class="lines-horizontal">

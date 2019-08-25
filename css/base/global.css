@@ -7,6 +7,23 @@ body {
   background-size: cover;
 } 
 
+@keyframes blur-blink {
+  0% {
+    filter: blur(1px);
+  }
+  40% {
+    filter: blur(3px);
+  }
+
+  50% {
+    filter: blur(2px);
+  }
+
+  100% {
+    filter: blur(1px);
+  }
+}
+
 @keyframes fall {
   to {
     y: var(--to-y);

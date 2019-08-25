@@ -10,7 +10,7 @@
   height: calc(100vh - var(--grid-size));
   width: 100%;
 
-  filter: url("#wave-filter");
+  /* animation: blur-blink 7s ease-in-out infinite; */
 }
 
 .sun-degrade-center {
