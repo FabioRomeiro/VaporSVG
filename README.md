@@ -1,4 +1,4 @@
-# [VaporSVG](http://fabioromeiro.com.br)
+# [VaporSVG](http://www.fabioromeiro.com.br)
 
 **Author:** Fábio Romeiro
 
@@ -7,9 +7,13 @@
   VaporSVG is a landing page created by me while studying svg, which I'll be using as a placeholder page while I develop my website.
 
 ---
+### Final design: [Figma Visualization](https://www.figma.com/file/oq13Dm18FPdzFmly8s1DqY/PersonalVapor?node-id=0%3A1) 
+---
+### TODO's: [Issues](https://github.com/FabioRomeiro/VaporSVG/issues)
+---
 ### Access to VaporSVG website
 
-Access the landing page [clicking on this link](http://fabioromeiro.com.br)
+Access the landing page [clicking on this link](http://www.fabioromeiro.com.br)
 
 ---
 
