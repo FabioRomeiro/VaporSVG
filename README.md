@@ -1,27 +1,16 @@
-# [VaporSVG](http://www.fabioromeiro.com.br)
+# [VaporSVG](https://vapor.fabioromeiro.com.br)
 
-**Author:** Fábio Romeiro
+## About
 
-### What is VaporSVG?
+Vapor SVG is a little project to apply some SVG animations concepts :D
 
-  VaporSVG is a landing page created by me while studying svg, which I'll be using as a placeholder page while I develop my website.
+## Design
 
----
-### Final design: [Figma Visualization](https://www.figma.com/file/oq13Dm18FPdzFmly8s1DqY/PersonalVapor?node-id=0%3A1) 
----
-### TODO's: [Issues](https://github.com/FabioRomeiro/VaporSVG/issues)
----
-### Access to VaporSVG website
+[Figma Visualization](https://www.figma.com/file/oq13Dm18FPdzFmly8s1DqY/PersonalVapor) 
 
-Access the landing page [clicking on this link](http://www.fabioromeiro.com.br)
+## Development
 
----
+(Node vesion: v16.15.0)
 
-### Running the website locally
-
-This is a basic static website, but to make the development process faster and easier I choose to use a task runner (Gulp); If you want to run the webpage locally, go through this 2 steps:
-
-1. In the terminal, run ```npm install``` to install the dependences (make sure you're in the right directory)
-2. Execute the application with ```npm run dev```
-
-Once you have done so, your browser should open and load the website automatically, but if it don't, run this address: *http://localhost:3000*
+1) `npm install`
+2) `npm run dev`
