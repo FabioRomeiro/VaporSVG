@@ -10,5 +10,7 @@ Vapor SVG is a little project to apply some SVG animations concepts :D
 
 ## Development
 
-1) Clone the repo
-2) Open `index.html` on your browser
+(Node vesion: v16.15.0)
+
+1) `npm install`
+2) `npm run dev`
