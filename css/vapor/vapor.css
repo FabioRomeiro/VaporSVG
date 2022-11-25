@@ -41,6 +41,11 @@
   width: 420px;
   margin-top: 25vh;
   text-transform: uppercase;
+  background: linear-gradient(155deg, #d93fa2 -6.75%, rgba(0, 209, 255, 0.76) 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .vapor__ui .contact {
