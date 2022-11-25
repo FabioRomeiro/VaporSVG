@@ -8,3 +8,92 @@
   width: 100%;
   height: 100vh;
 }
+
+.vapor__highlight {
+  position: relative;
+}
+
+.vapor__highlight::before {
+  content: '';
+  width: 100%;
+  height: 36px;
+  position: absolute;
+  background-color: #5B0052;
+  z-index: -1;
+  top: 4px;
+}
+
+.vapor__ui {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.vapor__ui .title {
+  text-align: center;
+  font-size: 56px;
+  font-family: PressStart2P;
+  width: 420px;
+  margin-top: 25vh;
+  text-transform: uppercase;
+  background: linear-gradient(155deg, #d93fa2 -6.75%, rgba(0, 209, 255, 0.76) 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.vapor__ui .contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100px;
+  gap: 40px;
+  width: 980px;
+}
+
+.vapor__ui .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  position: relative;
+  align-self: flex-start;
+}
+
+.vapor__ui .contact-item:nth-child(n + 3) {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.wallpaper-mode-button {
+  position: fixed;
+  bottom: 40px;
+  left: 56px;
+  color: white;
+  cursor: pointer;
+  transition: opacity ease-in-out .2s;
+  user-select: none;
+}
+
+.wallpaper-mode-button.vapor__highlight::before {
+  background-color: #FB0F9C;
+}
+
+.vapor__ui .wallpaper-mode-input {
+  position: absolute;
+  opacity: 0; 
+}
+
+.vapor__ui .wallpaper-mode-input:checked ~ *:not(.wallpaper-mode-button) {
+  display: none;
+}
+
+.vapor__ui .wallpaper-mode-input:checked ~ .wallpaper-mode-button:not(:hover) {
+  opacity: .1;
+}

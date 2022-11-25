@@ -2,9 +2,27 @@
   --grid-size: 38vh;
 }
 
+@font-face {
+  font-display: fallback;
+  font-family: PressStart2P;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Press_Start_2P/PressStart2P-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: fallback;
+  font-family: Cutive;
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Cutive/Cutive-Regular.ttf') format('truetype');
+}
+
 body {
   background-color: #09013B;
   background-size: cover;
+  font-family: Cutive;
+  font-size: 24px;
 } 
 
 @keyframes blur-blink {
