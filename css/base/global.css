@@ -22,8 +22,15 @@ body {
   background-color: #09013B;
   background-size: cover;
   font-family: Cutive;
-  font-size: 24px;
-} 
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+}
+
 
 @keyframes blur-blink {
   0% {

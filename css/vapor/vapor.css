@@ -36,8 +36,8 @@
 
 .vapor__ui .title {
   text-align: center;
-  font-size: 56px;
   font-family: PressStart2P;
+  font-size: 46px;
   width: 420px;
   margin-top: 25vh;
   text-transform: uppercase;
@@ -48,13 +48,20 @@
   text-fill-color: transparent;
 }
 
+@media (min-width: 600px) {
+  .vapor__ui .title {
+    font-size: 56px;
+  }
+}
+
 .vapor__ui .contact {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   height: 100px;
   gap: 40px;
-  width: 980px;
+  max-width: 980px;
+  width: 90%;
 }
 
 .vapor__ui .contact-item {
@@ -74,7 +81,7 @@
 .wallpaper-mode-button {
   position: fixed;
   bottom: 40px;
-  left: 56px;
+  left: 5%;
   color: white;
   cursor: pointer;
   transition: opacity ease-in-out .2s;
